@@ -17,4 +17,13 @@ public record Package(String destination, Integer distance, Integer price, Local
                 LocalDate.parse(splitString[3])
         );
     }
+
+    @Override
+    public String toString() {
+        return "\nPackage{" +
+                "date = " + date + '\'' +
+                "destination='" + destination + '\'' +
+                ", distance=" + distance +
+                ", price=" + price +"}";
+    }
 };

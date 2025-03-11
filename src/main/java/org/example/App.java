@@ -9,6 +9,6 @@ public class App
     public static void main( String[] args )
     {
         PackageHandler packageHandler = new PackageHandler();
-        System.out.println(packageHandler.getPackagesFromFile());
+        System.out.println(packageHandler.sortPackagesByDate(packageHandler.getPackagesFromFile()));
     }
 }
